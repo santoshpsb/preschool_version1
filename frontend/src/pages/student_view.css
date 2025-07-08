@@ -1,0 +1,173 @@
+body {
+  display: block !important;
+  text-align: left !important;
+  margin: 10px;
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+.view-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.controls-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.search-bar-block,
+.options-block,
+.sections-block {
+  background: #fff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(118, 75, 162, 0.06);
+  min-width: 220px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: block;
+  margin: 4px 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.student-details-table-block {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.student-details-table {
+  border-collapse: collapse;
+  width: 80%;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.student-details-table th,
+.student-details-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.student-details-table th {
+  background: #3182ce;
+  color: #fff;
+  font-weight: 600;
+}
+
+.student-details-table tr:last-child td {
+  border-bottom: none;
+}
+
+.student-details-table button {
+  margin-right: 8px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px;
+  background: #3182ce;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.student-details-table button:last-child {
+  background: #e53e3e;
+}
+
+.student-details-table button:hover {
+  opacity: 0.85;
+}
+
+/* Overlay for modal */
+.delete-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(44, 44, 44, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.delete-confirm-popup {
+  position: relative;
+  background: #fcf3ff;
+  border-radius: 8px;
+  font-size: large;
+  padding: 32px 28px;
+  color: #1a8bbc;
+  box-shadow: 0 4px 24px rgba(151, 10, 222, 0.15);
+  min-width: 320px;
+  text-align: center;
+}
+
+.delete-confirm-popup button {
+  margin: 0 10px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #3182ce;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.delete-confirm-popup button:hover {
+  background: #225ea8;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.close-popup:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.edit-popup {
+  margin-top: 18px;
+  background: #f0f4ff;
+  border: 1px solid #3182ce;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.edit-popup input {
+  margin-left: 8px;
+  margin-bottom: 10px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: 1px solid #b3b3b3;
+}
+
+@media (max-width: 900px) {
+  .controls-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .student-details-table {
+    width: 100%;
+  }
+}

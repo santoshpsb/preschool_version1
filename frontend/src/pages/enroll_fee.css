@@ -1,0 +1,90 @@
+.view-flex-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.fee-form-block {
+  width: 100%;
+  max-width: 420px;
+  background: none; /* Remove background */
+  border: none; /* Remove border if present */
+  box-shadow: none; /* Remove shadow */
+  padding: 0; /* Remove padding */
+  margin-top: 32px;
+}
+
+.fee-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.fee-inputs label {
+  display: block;
+  margin-bottom: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.fee-inputs input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 6px;
+  border: 1px solid #b3b3b3;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.fee-inputs input[type="number"] {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8f8fa;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.fee-inputs input[type="number"]:focus {
+  border-color: #764ba2;
+  background: #fff;
+  box-shadow: 0 0 0 2px #e9d8fd;
+}
+
+.fee-submit-btn {
+  margin: 0px auto 0 auto;
+  display: block;
+  width: 120px;
+  height: auto;
+  padding: 10px 32px;
+  background: #4a148c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(74, 20, 140, 0.08);
+}
+
+.fee-submit-btn:hover {
+  background: #764ba2;
+}
+
+@media (max-width: 700px) {
+  .view-flex-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .search-bar-block {
+    min-width: 0;
+    width: 100%;
+  }
+}

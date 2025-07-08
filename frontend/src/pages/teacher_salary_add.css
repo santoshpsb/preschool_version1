@@ -1,0 +1,104 @@
+.salary-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", sans-serif;
+  animation: fadeIn 0.7s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.form-title {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f2937;
+  letter-spacing: 1px;
+}
+
+.salary-form .form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.salary-form .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.salary-form label {
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.salary-form input[type="text"],
+.salary-form input[type="month"],
+.salary-form input[type="number"] {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.salary-form input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  background-color: #ffffff;
+}
+
+.form-error {
+  margin-top: 10px;
+  color: #dc2626;
+  background-color: #fee2e2;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-success {
+  margin-top: 10px;
+  color: #059669;
+  background-color: #d1fae5;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #4f46e5, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #3b82f6, #4f46e5);
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
